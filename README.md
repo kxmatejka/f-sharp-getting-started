@@ -3,6 +3,6 @@
 ## Compile & Execute
 
 ```
-    fsharpc app.fsx
-    mono app.exe
+fsharpc app.fsx
+mono app.exe
 ```
