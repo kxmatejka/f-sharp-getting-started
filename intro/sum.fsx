@@ -6,7 +6,6 @@ let rec readUserInput numbers =
 
 let main () =
     printfn "Write numbers. To calculate sum enter ':s'"
-    let numbers = readUserInput []
-    printfn "Sum: %i" (List.sum numbers)
+    readUserInput [] |> List.sum |> printfn "Sum: %i"
 
 main()
