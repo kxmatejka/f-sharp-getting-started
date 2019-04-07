@@ -1,6 +1,7 @@
 let rec factorial (x: int): int =
-    if x < 1 then 1
-    else x * factorial (x - 1)
+    match x with
+    | x when x < 1 -> 1
+    | x -> x * factorial (x - 1)
 
 let main () =
     printf "Enter value: "
