@@ -1,8 +1,8 @@
 let rec readUserInput numbers =
     let value = System.Console.ReadLine()
     match value with
-    | value when value = ":s" -> numbers
-    | _ -> readUserInput (List.append numbers [value |> int])
+    | ":s" -> numbers
+    | n -> List.append numbers [n |> int] |> readUserInput
 
 let main () =
     printfn "Write numbers. To calculate sum enter ':s'"

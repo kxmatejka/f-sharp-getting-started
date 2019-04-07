@@ -1,7 +1,8 @@
 let rec fibonacci (x: int): int =
     match x with
-    | x when x < 2 -> 1
-    | x -> fibonacci (x - 1) + fibonacci (x - 2)
+    | 0 -> 0
+    | 1 -> 1
+    | n -> fibonacci (n - 1) + fibonacci (n - 2)
 
 let main () =
     printfn "Enter value: "
